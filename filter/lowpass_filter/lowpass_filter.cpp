@@ -7,14 +7,14 @@ LowPassFilter::LowPassFilter(float cutFrq, uint32_t sampleFrq)
     _cutFrq = cutFrq;
     _sampleFrq = sampleFrq;
     _cof = 0.0f;
-    _Vo_p = 0;
+    _Vo_p = 0.0f;
     _direct = false;
 }
 
 LowPassFilter::LowPassFilter(float cof)
 {
     _cof = cof;
-    _Vo_p = 0;
+    _Vo_p = 0.0f;
     _direct = true;
 }
 
